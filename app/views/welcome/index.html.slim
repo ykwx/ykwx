@@ -1,17 +1,4 @@
-#left_column
-	.title
-		h1 YKWX
-
-		ul
-			li = link_to "Barcelona", root_url
-			li = link_to "Croatia", root_url
-			li = link_to "Trieste", root_url
-			li = link_to "Berlin", root_url
-			li = link_to "Majorca", root_url
-
 #right_column
 	.box
 	.header_image
-		.flexslider
-			/ = render "shared/barcelona"
-			= render "shared/berlin"
+		= image_tag "barca_1.jpg"
