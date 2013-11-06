@@ -1,15 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Anaheim|Oswald:400,300,700);
 
 body {
-	background-color: #FFF6DC;
+	background-color: red;
 	color: #202020;
-    opacity: 0;
+    opacity: 0.5;
+                                 
+    -webkit-transition: opacity 200ms ease-in;
+       -moz-transition: opacity 200ms ease-in;
+        -ms-transition: opacity 200ms ease-in;
+         -o-transition: opacity 200ms ease-in;
+            transition: opacity 200ms ease-in;
+}
 
-    -webkit-transition: opacity 2s ease-in;
-       -moz-transition: opacity 2s ease-in;
-        -ms-transition: opacity 2s ease-in;
-         -o-transition: opacity 2s ease-in;
-            transition: opacity 2s ease-in;
+body.load {
+    opacity: 1;
 }
 
 #header {
@@ -41,20 +45,11 @@ a:hover {
 	}
 }
 
-<<<<<<< HEAD:app/assets/stylesheets/welcome.css.scss
-body.load {
-    opacity: 1;
-}
-
-ul {
-	list-style-type: none;
-=======
 .locations {
 	ul {
 		list-style-type: none;
 		padding: 0;
 	}
->>>>>>> origin/master:app/assets/stylesheets/static_pages.css.scss
 	font-family: 'Anaheim', sans-serif, helvetica;
 	font-size: 14px;
 	line-height: 1.4em;
