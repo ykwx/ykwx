@@ -29,21 +29,32 @@ a:hover {
 	text-decoration: line-through;
 }
 
-.title {
+#title {
 	h1{	
 		font-family: 'Oswald', sans-serif, helvetica;
 		font-weight: 300;
 		font-size: 30px;
 		margin: 0px 12px 12px 12px;
 	}
+	a {
+		text-decoration: none;
+	}
 }
 
+<<<<<<< HEAD:app/assets/stylesheets/welcome.css.scss
 body.load {
     opacity: 1;
 }
 
 ul {
 	list-style-type: none;
+=======
+.locations {
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+>>>>>>> origin/master:app/assets/stylesheets/static_pages.css.scss
 	font-family: 'Anaheim', sans-serif, helvetica;
 	font-size: 14px;
 	line-height: 1.4em;
