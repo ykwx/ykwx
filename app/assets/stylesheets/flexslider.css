@@ -1,13 +1,4 @@
-/*
- * jQuery FlexSlider v2.2.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- */
+@import url(http://fonts.googleapis.com/css?family=Anaheim|Oswald:400,300,700);
 
 
 /* Browser Resets
@@ -67,6 +58,7 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav a  { 
+	font-family: 'Anaheim', sans-serif, helvetica;
 	display: block; 
 	width: 40px; 
 	height: 40px; 
