@@ -3,6 +3,13 @@
 body {
 	background-color: #FFF6DC;
 	color: #202020;
+    opacity: 0;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
 }
 
 #header {
@@ -22,13 +29,17 @@ a:hover {
 	text-decoration: line-through;
 }
 
-.title {
+#title {
 	h1{	
 		font-family: 'Oswald', sans-serif, helvetica;
 		font-weight: 300;
 		font-size: 30px;
-		margin: 0px 12px 12px 12px
+		margin: 0px 12px 12px 12px;
 	}
+}
+
+body.load {
+    opacity: 1;
 }
 
 ul {
@@ -61,3 +72,5 @@ ul {
 	margin-top: -520px;
 	margin-left: 2px;
 }
+
+
