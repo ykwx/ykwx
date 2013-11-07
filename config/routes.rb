@@ -4,7 +4,7 @@ Psychapp::Application.routes.draw do
 
   get "/barcelona", to: "static_pages#barcelona"
   get "/croatia", to: "static_pages#croatia"
-  get "/trieste", to: "static_pages#trieste"
+  get "/nerezine", to: "static_pages#nerezine"
   get "/berlin", to: "static_pages#berlin"
   get "/majorca", to: "static_pages#majorca"
 
