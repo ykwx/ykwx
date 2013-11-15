@@ -43,7 +43,7 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider { margin: 0 0 60px; background: #fff; border: none; position: relative; zoom: 1; }
+.flexslider { margin: 0 0 60px; height: 0; background: #FFF6DC; border: none; position: relative; zoom: 1; }
 .flex-viewport { 
 	max-height: 2000px; 
 	-webkit-transition: all 1s ease; 
@@ -56,26 +56,39 @@ html[xmlns] .slides {display: block;}
 .carousel li { margin-right: 5px; }
 
 /* Direction Nav */
-.flex-direction-nav {*height: 0;}
+.flex-direction-nav {
+	*height: 0;
+	margin-top: 0px;
+}
 .flex-direction-nav a  { 
-	font-family: 'Anaheim', sans-serif, helvetica;
 	display: block; 
 	width: 40px; 
 	height: 40px; 
-	margin: -20px -55px 0px 0px;
+	margin: -355px 964px 0px 0px;
 	position: absolute; 
-	top: 50%; 
-	z-index: 10; 
 	cursor: pointer; 
-	color: rgba(0,0,0,0.8); 
 	opacity: 1;
 		-webkit-transition: all .3s ease;
 		-moz-transition: all .3s ease; 
 		transition: all .3s ease; 
 	}
-.flex-direction-nav .flex-prev { display: none;}
-.flex-direction-nav .flex-next { right: -50px; text-align: right; }
-.flex-direction-nav a.flex-next:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f002'; }
+	
+.flex-direction-nav a:hover {
+	opacity: 0.8;
+} 
+
+.flex-prev { 
+	right: -25px;
+	background: url('https://s3-eu-west-1.amazonaws.com/ykwx/graphics/nav.png');
+	background-position: -7px 49px;
+	text-indent: -99999px; 
+}
+.flex-next { 
+	right: -66px;
+	background: url('https://s3-eu-west-1.amazonaws.com/ykwx/graphics/nav.png');
+	background-position: -7px -3px; 
+	text-indent: -99999px;
+}
 
 /* Pause/Play */
 .flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
@@ -84,17 +97,7 @@ html[xmlns] .slides {display: block;}
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
 .flex-control-paging, .flex-control-nav {
+	background-color: #FFF6DC;
 	display: none;
 }
 
-
-.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
-.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
-.flex-control-thumbs img:hover {opacity: 1;}
-.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
-
-@media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
-  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
-}
